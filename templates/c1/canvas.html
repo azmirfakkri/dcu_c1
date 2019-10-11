@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+    <img id="imageID" src="myImage.jpg" width="350" height='350' alt="">
+    <canvas id="canvasID" width="480" height="480" style="border:1px solid blue;"></canvas>
+
+    <!-- Script to draw a 2D image on the canvas area -->
+    <script>
+        var c = document.getElementById('canvasID');
+        var ctx = c.getContext('2d');
+        var img = document.getElementById('imageID');
+        ctx.drawImage(img,5,5);
+    </script>
+</body>
+</html>
